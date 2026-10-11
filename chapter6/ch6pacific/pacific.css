@@ -68,7 +68,7 @@ footer {
     font-weight: bold;
 }
 
-#homehero #yurthero #trailhero {
+#homehero, #yurthero, #trailhero {
      background-repeat: no-repeat;
      background-size: cover;
      height: 18.75rem;
