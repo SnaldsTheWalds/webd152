@@ -11,7 +11,7 @@ body {
   background-repeat: no-repeat;
   border: 1px solid #003;
   box-shadow: 3px 3px 3px #333;
-  color: #666;
+  color: #555;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
@@ -88,7 +88,7 @@ nav a:visited {
 }
 
 nav a:hover {
-  color: #a42a2a;
+  color: #a52a2a;
 }
 
 main {
@@ -110,7 +110,7 @@ footer {
 }
 
 h2 {
-  color: #39c;
+  color: #1976d2;
   text-shadow: 1px 1px 1px #ccc;
 }
 
@@ -176,6 +176,10 @@ footer {
   overflow-wrap: break-word;
 }
 
+section {
+  padding: 1rem 0;
+}
+
 /* Table Styles */
 table {
   border: 0.125rem solid #1976d2;
@@ -199,6 +203,17 @@ td {
 }
 .text {
   text-align: left;
+}
+
+tr {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+tr:hover {
+  background-color: #fff4cc;
+  color: #333333;
 }
 
 tr:nth-of-type(odd) {
@@ -260,9 +275,9 @@ tr:nth-of-type(odd) {
     width: 100%;
     padding-left: 35%;
     position: relative;
-    text-align-last: left;
+    text-align: left;
   }
-  .td::before {
+  td::before {
     width: 25%;
     display: block;
     padding-right: 0.625rem;
