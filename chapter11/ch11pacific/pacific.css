@@ -56,22 +56,18 @@ nav {
 }
 
 nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  list-style-type: none;
-  margin: 0;
-  padding-left: 0;
-  max-width: 100%;
-  box-sizing: border-box;
-  flex-wrap: wrap;
+  width: 100%;
 }
 
 nav li {
   border-bottom: 1px solid #003;
-  box-sizing: border-box;
   padding: 0.5rem 0;
-  max-width: 100%;
+  width: 100%;
   text-align: center;
 }
 
@@ -252,7 +248,7 @@ textarea {
   border-radius: 0.25em;
   font-size: 1em;
   background-color: #fff;
-  transition: border-color 0.2 ease-in-out;
+  transition: border-color 0.2s ease-in-out;
 }
 
 input:focus,
@@ -270,7 +266,7 @@ input[type="submit"] {
   font-size: 1em;
   font-weight: bold;
   cursor: pointer;
-  transition: background 0.2;
+  transition: background 0.2s;
 }
 
 input[type="submit"]:hover,
@@ -311,7 +307,7 @@ input[type="submit"]:focus {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   transition:
     transform 0.3s ease,
-    box-shadow 0.3 ease;
+    box-shadow 0.3s ease;
 }
 
 /* Text Content Styling */
@@ -326,6 +322,10 @@ input[type="submit"]:focus {
   gap: 1em;
   grid-template-columns: repeat(1, 1fr);
   margin: 2em 0;
+}
+
+.gallery > h3 {
+  grid-column: 1 / -1;
 }
 
 /* Gallery Image Container */
@@ -370,6 +370,14 @@ input[type="submit"]:focus {
 .gallery-image:hover figcaption {
   opacity: 1;
   transform: translateY(0);
+}
+
+.gallery-image:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+.gallery-image:hover img {
+  transform: scale(1.1);
 }
 
 @media (min-width: 900px) {
